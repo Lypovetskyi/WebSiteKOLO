@@ -31,7 +31,7 @@ function animateElements() {
     if (isElementInViewport(list)) {
       setTimeout(function() {
         list.classList.add("show");
-      }, index * 500); 
+      }, index * 150); 
     }
   });
 }
