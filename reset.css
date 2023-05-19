@@ -4,6 +4,10 @@ Reset and base styles
 	margin: 0px;
 	border: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 *,
 *::before,
