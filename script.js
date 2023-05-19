@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   $(window).scroll(function() {
     $('.dropdownSection').each(function() {
       let sectionTop = $(this).offset().top;
@@ -13,14 +13,14 @@ $(document).ready(function() {
   });
 });
 
-
 function isElementInViewport(element) {
   let rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+    element.style.display !== 'none'
   );
 }
 
@@ -36,7 +36,25 @@ function animateElements() {
   });
 }
 
-window.addEventListener("scroll", animateElements);
+function throttle(func, delay) {
+  let timeoutId;
+  return function() {
+    if (!timeoutId) {
+      timeoutId = setTimeout(function() {
+        func();
+        timeoutId = null;
+      }, delay);
+    }
+  };
+}
+
+function debounce(func, delay) {
+  let timeoutId;
+  return function() {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(func, delay);
+  };
+}
+
+window.addEventListener("scroll", throttle(animateElements, 200));
 window.addEventListener("load", animateElements);
-
-
