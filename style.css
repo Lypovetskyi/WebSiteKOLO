@@ -368,9 +368,9 @@ body {
 /* target */
 
 .target {
-    max-width: 1300px;
     justify-content: center;
     background: url(/img/target/background-target.png);
+    background-position: center;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
