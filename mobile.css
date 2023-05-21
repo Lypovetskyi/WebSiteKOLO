@@ -808,6 +808,7 @@ margin: 0;
     .header__nav {
         justify-content: center;
         margin-top: 8px;
+        padding-bottom: 8px;
     }
 
     .nav__list-link {
@@ -818,7 +819,8 @@ margin: 0;
     }
 
     .login-btn {
-        padding: 4px 8px;
+        padding: 0 8px;
+        border-radius: 50%;
         background: #FFA051;
         color: #FFFFFF;
     }
@@ -1079,7 +1081,8 @@ margin: 0;
     }
 
     .login-btn {
-        padding: 4px 8px;
+        padding: 0 8px;
+        border-radius: 50%;
         background: #FFA051;
         color: #FFFFFF;
     }
@@ -1259,6 +1262,9 @@ margin: 0;
         max-width: 375px;
         text-align: center;
         margin: 0 auto;
+    }
+    .footer__nav_list {
+        max-width: 340px;
     }
 
     .footer__end {

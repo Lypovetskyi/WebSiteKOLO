@@ -63,7 +63,7 @@ body {
    color: #161616;
 }
 .login-btn {
-    padding: 12px 32px;
+    padding: 0 32px;
 
     background: #FFA051;
     border-radius: 32px;
@@ -158,7 +158,7 @@ body {
 }
 
 .footer__nav_list {
-    max-width: 398px;
+    max-width: 340px;
     margin: 0 auto;
     justify-content: space-between;
     padding-bottom: 13px;
@@ -344,11 +344,7 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-.login-btn {
-    border-radius: 20px;
-    margin-bottom: 10px;
 
-}
 }
 
 @media screen and (max-width: 375px) {
@@ -368,5 +364,6 @@ body {
 .footer__nav_list {
 padding-right: 25px;
 padding-left: 25px;
+max-width: 340px;
 }
 }

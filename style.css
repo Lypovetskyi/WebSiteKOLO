@@ -81,7 +81,7 @@ justify-content: space-between;
 }
 
 .login-btn {
-    padding: 12px 32px;
+    padding: 0 32px;  
     background: #FFA051;
     border-radius: 32px;
     color: #FFFFFF;
@@ -149,6 +149,7 @@ justify-content: space-between;
   left: 0;
   z-index: 1;
   width: 100vw;
+  background-color: #0D0D0E;
 
 }
 .chart {
@@ -182,14 +183,14 @@ justify-content: space-between;
 
 .text__animation {
     position: relative;
-    margin-top: 170px;
+    margin-top: 340px;
     background-color: #FFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
 }
 .text__animation_container {
-    padding-top: 138px;
-    max-width: 1300px;
+    padding-top: 140px;
+    /* max-width: 1300px; */
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -713,7 +714,7 @@ justify-content: space-between;
 }
 
 .footer__nav_list {
-    max-width: 398px;
+    max-width: 340px;
     margin: 0 auto;
     justify-content: space-between;
     padding-bottom: 13px;
