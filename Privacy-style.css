@@ -246,3 +246,127 @@ body {
     column-gap: 14px;
     display: flex;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .website__privacy {
+        max-width: 1024px;
+        padding-right: 25px;
+        padding-left: 25px;
+}
+
+}
+
+@media screen and (max-width: 912px) {
+        .website__privacy {
+            max-width: 912px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+}
+
+
+@media screen and (max-width: 768px) {
+        .website__privacy {
+        max-width: 768px;
+        padding-right: 25px;
+        padding-left: 25px;
+}
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.footer__end {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.footer__end_text {
+    width: 175px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    margin-right: 40px;
+}
+.footer__end_support {
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 480px) {
+    .nav__list-link {
+        font-size: 8px;
+    }
+
+    .website__privacy {
+        max-width: 480px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }  
+.logo {
+    font-size: 14px;
+}
+.title__privacy {
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header__nav {
+    font-size: 14px ;
+}
+
+.nav__list-link p {
+    font-size: 8px;
+}
+
+}
+
+@media screen and (max-width: 414px), (max-width: 390px) {
+      .website__privacy {
+        max-width: 390px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }  
+    .title__privacy {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.login-btn {
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+}
+
+@media screen and (max-width: 375px) {
+        .website__privacy {
+        max-width: 375px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }  
+        .title__privacy {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer__nav_list {
+padding-right: 25px;
+padding-left: 25px;
+}
+}
