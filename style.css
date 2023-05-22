@@ -363,11 +363,11 @@ justify-content: space-between;
     margin: 0 auto;
     padding-bottom: 28px;
 }
-.features__list-last {
+.features__list-last  {
+    column-gap: 30px;
     display: flex;
-    column-gap: 100px;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: space-between;
+    max-width: 850px;
 }
 
 

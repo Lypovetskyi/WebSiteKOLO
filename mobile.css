@@ -64,6 +64,15 @@ margin: 0;
 .payment__method-features h2 {
     font-size: 50px;
 }
+.features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 305px;
+}
 
 /* target */
 .target__title h2 {
@@ -190,6 +199,15 @@ margin: 0;
 }
 .payment__method-features h2 {
     font-size: 50px;
+}
+.features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 268px;
 }
 
 /* target */
@@ -318,6 +336,15 @@ margin: 0;
 .payment__method-features h2 {
     font-size: 50px;
 }
+.features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 220px;
+}
 
 /* target */
 .target__title h2 {
@@ -429,6 +456,9 @@ margin: 0;
     z-index: 1;
     border-radius: 10px;
 }
+.orange-line {
+    left: 10px;
+}
 .text__animation {
     position: relative;
     background-color: #FFF;
@@ -457,6 +487,15 @@ margin: 0;
 }
 .payment__method-features h2 {
     font-size: 50px;
+}
+.features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 204px;
 }
 
 /* target */
@@ -652,6 +691,15 @@ margin: 0;
     .payment__method-features h2 {
         font-size: 32px;
     }
+    .features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 124px;
+}
     
     /* target */
     .target {
@@ -880,6 +928,15 @@ margin: 0;
         margin-right: 35px;
         margin-left: auto;
 }
+.features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 90px;
+}
 
     .payment__method-features h2 {
         font-size: 24px;
@@ -1033,6 +1090,17 @@ margin: 0;
     }
 }
 
+@media screen and (max-width: 390px) {
+    .features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 82px;
+}
+}
 
 @media screen and (max-width: 375px) {
 
@@ -1142,6 +1210,15 @@ margin: 0;
         justify-content: center;
         margin-right: 35px;
         margin-left: auto;
+}
+.features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 77px;
 }
 
     .payment__method-features h2 {
