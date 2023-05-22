@@ -365,7 +365,7 @@ justify-content: space-between;
 }
 .features__list-last {
     display: flex;
-    column-gap: 34px;
+    column-gap: 100px;
     margin-right: auto;
     margin-left: auto;
 }
