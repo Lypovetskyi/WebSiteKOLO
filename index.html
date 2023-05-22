@@ -5,49 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOLO</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/mobile.css">
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
- <section class="main">
-    <div class="container">
-        <div class="header">
-            <div class="header__logo">
-                <a class="logo" href="/index.html"><h2 class="logo">Simetria</h2></a>
+
+    <!-- header -->
+        <header class="main">
+            <div class="container">
+                <div class="header_container">
+                    <div class="header__logo">
+                        <a class="logo" href="/index.html"><h1 class="logo">Simetria</h1></a>
+                    </div>
+                    <div class="header">
+                        <nav class="header__nav">
+                            <a class="nav__list-link" href="#!">Getting paid</a>
+                            <a class="nav__list-link" href="#!">Payment</a>
+                            <a class="nav__list-link" href="#!">Our mission</a>
+                            <a class="nav__list-link" href="#!">Experts</a>
+                            <a class="nav__list-link" href="#!">write to us</a>
+                            <a class="nav__list-link last login-btn" href="#solutions"><p>Login</p></a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="main__title">
+                    <h1 class="title">Modern standard <br>for online payments</h1>
+                    <p class="sub__title">Crederes is a platform for sending and receiving online payments</p>
+                </div>
+                <div class="background-images">
+                    <img class="berg" src="/img/berg.svg" alt="berg">
+                    <img class="orange-line" src="/img/orange-line.svg" alt="orange-line">
+                    <img class="chart" src="/img/solutions/chart.svg" alt="chart">
+                    <img class="total-balance" src="/img/total-balance.png" alt="total-balance">
+                </div>
             </div>
-            <nav class="header__nav">
-                 <a class="nav__list-link" href="#!"><p>Getting paid</p></a>
-                <a class="nav__list-link" href="#!"><p>Payment</p></a>
-                <a class="nav__list-link" href="#!"><p>Our mission</p></a>
-                <a class="nav__list-link" href="#!"><p>Experts</p></a>
-                <a class="nav__list-link" href="#!"><p>write to us</p></a>
-                <a class="nav__list-link last login-btn" href="#solutions"><p>Login</p></a>
-            </nav>
-        </div>
-        <div class="main__title">
-            <h1 class="title">Modern standard <br>for online payments</h1>
-            <p class="sub__title">Crederes is a platform for sending and receiving online payments</p>
-        </div>
-        <div class="background-images">
-            <img class="berg" src="/img/berg.svg" alt="berg">
-            <img class="orange-line" src="/img/orange-line.svg" alt="orange-line">
-            <img class="chart" src="/img/solutions/chart.svg" alt="chart">
-            <img class="total-balance" src="/img/total-balance.png" alt="total-balance">
-        </div>
-    </div>
-</section> 
+        </header> 
 
 
         <!--text__animation  -->
 
-       <section class="text__animation ">
+        <section class="text__animation ">
         <div class="text__animation_container">
             <h2 class="text__animation_title">
                 Getting paid just got easier 
@@ -81,7 +87,7 @@
             </div>
         </div>
 
-        </section>   
+        </section>    
 
         <!-- payment__method-features -->
     
@@ -89,56 +95,81 @@
         <div class="container__payment__method-features">
             <div class="payment__methodfeatures-title">
                 <h2>Payment method features</h2>
-                <p>Allow your consumers to make quickand convenient purchases</p>
+                <p class="payment__sub-text">Allow your consumers to make quickand convenient purchases</p>
             </div>
-                 <div class="payment__features show">
-                    <ul class="features__list ">
-                        <li><img class="features__list_img" src="/img/payment-methodfeatures/first.png" alt="first"></li>
-                        <li><img class="features__list_img" src="/img/payment-methodfeatures/second.png" alt="second"></li>
-                        <li><img class="features__list_img-last" src="/img/payment-methodfeatures/thrird.png" alt="thrird"></li>
-                    </ul>
-                    
-                     <ul class="features__list ">
-                        <li><img class="features__list_img" src="/img/payment-methodfeatures/fourth.png" alt="fourth"></li>
-                        <li><img class="features__list_img" src="/img/payment-methodfeatures/fifth.png" alt="fifth"></li>
-                        <li><img class="features__list_img" src="/img/payment-methodfeatures/sixth.png" alt="sixth"></li>
-                    </ul>
 
-                    <ul class="features__list-last ">
-                        <li><img class="features__list_img" src="/img/payment-methodfeatures/seventh.png" alt="seventh"></li>
-                        <li><img class="features__list_img" src="/img/payment-methodfeatures/eighth.png" alt="eighth"></li>
-                    </ul>
+
+                <div class="payment__features show">
+                    <div class="features__list dropdownSection">
+                        <span class="features_list_content">
+                            <img class="features__list_img" src="/img/payment-methodfeatures/vector_img/first.svg" alt="first">
+                            <p class="features__list_text">Incoming and outgoing payments</p>
+                        </span>
+
+                        <span class="features_list_content">
+                            <img class="features__list_img" src="/img/payment-methodfeatures/vector_img/second.svg" alt="second">
+                            <p class="features__list_text">Alternative paymentmethods</p>
+                        </span>
+
+                        <span class="features_list_content">
+                            <img class="features__list_img" src="/img/payment-methodfeatures/vector_img/third.svg" alt="third">
+                            <p class="features__list_text"">Anti-fraud system</p>
+                        </span>
+
+                        <span class="features_list_content">
+                            <img class="features__list_img" src="/img/payment-methodfeatures/vector_img/fourth.svg" alt="fourth">
+                            <p class="features__list_text">Customised appearance</p>
+                        </span>
+
+                        <span class="features_list_content">
+                            <img class="features__list_img" src="/img/payment-methodfeatures/vector_img/fifth.svg" alt="fifth">
+                            <p class="features__list_text">Refund and partial payment processing</p>
+                        </span>
+                        <span class="features_list_content">
+                            <img class="features__list_img" src="/img/payment-methodfeatures/vector_img/sixth.svg" alt="sixth">
+                            <p class="features__list_text">Multi-currency payments available</p>
+                        </span>
+                        <span class="features_list_content">
+                            <img class="features__list_img" src="/img/payment-methodfeatures/vector_img/seventh.svg" alt="seventh">
+                            <p class="features__list_text">Full optimisation for mobile devices</p>
+                        </span>
+                        <span class="features_list_content">
+                            <img class="features__list_img" src="/img/payment-methodfeatures/vector_img/eighth.svg" alt="eighth">
+                            <p class="features__list_text">Data analysis and real-time reporting</p>
+                        </span>
+                    </div>
                 </div>
         </div>
           
         </section> 
 
-      <section class="target ">
+       <section class="target ">
         <div class="target__container">
             <div class="target__title">
                 <h2>Our mission is to increase your conversion</h2>
                 <p>Simetria is a technology company with the highest level of expertise in risk management and conversion improvement. We are ready to help projects of any scale manage their online business and accept payments: from new start-ups to large-scale international projects.</p>
             </div>
+
             <div class="target__info">
-                <ul class="target__info_list">
-                    <li>0% fees</li>
+                <span class="target__info_list">
+                    <h4>0% fees</h4>
                     <p>for incoming transfers in EUR</p>
-                </ul>
-                <ul class="target__info_list">
-                    <li>1 working day</li>
+                </span>
+                <span class="target__info_list">
+                    <h4>1 working day</h4>
                     <p>payment processing time</p>
-                </ul>
-                <ul class="target__info_list">
-                    <li>168 countries</li>
+                </span>
+                <span class="target__info_list">
+                    <h4 class="target__info_title">168 countries</h4>
                     <p>support transfers</p>
-                </ul>
+                </span>
             </div>
         </div>
     </section> 
 
     <!-- inreceiving payments -->
 
-     <section class="inreceiving__payments ">
+      <section class="inreceiving__payments ">
         <div class="inreceiving__payments__container">
             <div class="payments__container__title">
                     <h2>Experts inreceiving payments</h2>
@@ -169,7 +200,7 @@
     </section> 
 
     <!--solutions -->
-    <section id="solutions" class="solutions ">
+     <section id="solutions" class="solutions ">
        <div class="solutions__container">
         <div class="solutions__text">
             <h2 class="solutions__title">Safe and reliable solutions</h2>
@@ -183,7 +214,7 @@
             </div>
         </div>
        </div>
-    </section>
+    </section> 
 
     <!-- footer -->
     <footer class="footer ">
@@ -224,7 +255,7 @@
             
         </div>
         
-    </footer>
+    </footer> 
 
     
     <script src="/script.js"></script>

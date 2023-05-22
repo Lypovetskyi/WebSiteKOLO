@@ -6,7 +6,7 @@ margin: 0;
 
 @media screen and (max-width: 1024px) {
     /* header */
-    .header {
+    .header_container {
         column-gap: 10px;
         padding-top: 20px;
         padding-right: 25px;
@@ -142,7 +142,7 @@ margin: 0;
 
 @media screen and (max-width: 912px) {
     /* header */
-    .header {
+    .header_container {
         column-gap: 10px;
         padding-top: 20px;
         padding-right: 25px;
@@ -278,7 +278,7 @@ margin: 0;
 
 @media screen and (max-width: 768px) {
     /* header */
-    .header {
+    .header_container {
         column-gap: 10px;
         padding-top: 20px;
         padding-right: 25px;
@@ -421,7 +421,7 @@ margin: 0;
         
     }
     /* header */
-    .header {
+    .header_container {
         column-gap: 10px;
         padding-top: 20px;
         padding-right: 25px;
@@ -608,7 +608,7 @@ margin: 0;
         text-align: center;
 
     }
-    .header {
+    .header_container {
         max-width: 480px;
         padding-top: 16px;
         padding-right: 20px;
@@ -841,7 +841,7 @@ margin: 0;
         color: #FFFFFF;
     }
 
-    .header {
+    .header_container {
         margin: 0 auto;
         text-align: center;
         margin: 0 auto;
@@ -1124,7 +1124,7 @@ margin: 0;
         color: #FFFFFF;
     }
 
-    .header {
+    .header_container {
         margin: 0 auto;
         text-align: center;
         margin: 0 auto;
