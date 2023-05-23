@@ -170,6 +170,7 @@ justify-content: space-between;
 
 
 .total-balance {
+    
     margin: 0 auto;
     position: absolute;
     top: 70px;
@@ -293,16 +294,8 @@ justify-content: space-between;
 
 
 /* payment__method-features */
-.container__payment__method-features {
-    max-width: 1280px;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-}
-
 
 .payment__method-features h2 {
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
@@ -324,21 +317,20 @@ justify-content: space-between;
     letter-spacing: -0.02em;
     color: #868E9B;
 }
+
 .payment__features {
-    padding-top: 56px;
-    max-width: 1040px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    align-items: center;
+    margin-top: 56px;
+    background-image: url(/img/payment-methodfeatures/background-payment.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: flex;
-    justify-content: center; 
-    background-image: url(/img/payment-methodfeatures/background-payment.png),
-                      url(/img/payment-methodfeatures/black-line.png);
-    background-size: cover;
-    background-position: center;
 }
+
 .features__list {
+    position: relative;
+    /* /* padding-top: 122px; */
+     padding-bottom: 260px; 
+    max-width: 1040px;
     display: flex;
     justify-content: space-between;
     column-gap: 34px;
@@ -351,6 +343,8 @@ justify-content: space-between;
 
 
 .features_list_content {
+  position: relative;
+  z-index: 1;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -388,23 +382,18 @@ justify-content: space-between;
 /* target */
 
 .target {
-    margin-top: 260px;
     justify-content: center;
-    background: url(/img/target/background-target.png);
     background-position: center;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 122px;
     display: flex;
-    background-color: #0D0D0E;
-    background-image: url(/img/target/vector-target1.png),
-                      url(/img/target/vector-target2.png);
-    background-size: auto;
+    background-image: url(/img/target/target-bg.png) ;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .target__container {
-    /* max-width: 999px; */
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -455,6 +444,8 @@ justify-content: space-between;
     -webkit-text-fill-color: transparent;
 }
 .target__info {
+    margin-right: auto;
+    margin-left: auto;
     max-width: 822px;
     color: #F4F4F4;
     display: flex;
@@ -784,7 +775,6 @@ justify-content: space-between;
     font-size: 14px;
     line-height: 150%;
     text-align: center;
-    margin-right: 289px;
 }
 
 .footer__end_support {
@@ -796,7 +786,6 @@ justify-content: space-between;
     text-align: center;
     text-decoration-line: underline;
     color: #FFFFFF;
-    margin-right: 301px;
 }
 
 .footer__end_support a {

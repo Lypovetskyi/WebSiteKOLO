@@ -58,3 +58,5 @@ function debounce(func, delay) {
 
 window.addEventListener("scroll", throttle(animateElements, 200));
 window.addEventListener("load", animateElements);
+
+
