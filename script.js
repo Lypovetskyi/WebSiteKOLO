@@ -1,62 +1,35 @@
-$(function() {
-  $(window).scroll(function() {
-    $('.dropdownSection').each(function() {
-      let sectionTop = $(this).offset().top;
-      let sectionHeight = $(this).outerHeight();
-      let scrollTop = $(window).scrollTop();
-      let windowHeight = $(window).height();
-      
-      if (scrollTop > (sectionTop - windowHeight + sectionHeight / 2)) {
-        $(this).addClass('show');
-      }
-    });
+window.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.header__menu-btn');
+  const nav = document.querySelector('.header__nav');
+  const navCloseBtn = document.querySelector('.header__nav-close-btn');
+  const mainTitle = document.querySelector('.main__title');
+  const loginBtn = document.querySelector('.login-btn');
+
+  menuBtn.addEventListener('click', function() {
+    nav.classList.add('open');
+    mainTitle.classList.add('open');
+    document.body.style.overflow = 'hidden';
+
+    // Прокрутка страницы вниз
+    const elementToScroll = document.querySelector('.scroll-target');
+    elementToScroll.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  navCloseBtn.addEventListener('click', function() {
+    nav.classList.remove('open');
+    mainTitle.classList.remove('open');
+    document.body.style.overflow = 'auto'; // Разрешение прокрутки body
+  });
+
+  loginBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // Предотвращение перехода по ссылке
+
+    const loginSection = document.getElementById('login');
+    loginSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Закрытие меню после перехода
+    nav.classList.remove('open');
+    mainTitle.classList.remove('open');
+    document.body.style.overflow = 'auto'; // Разрешение прокрутки body
   });
 });
-
-function isElementInViewport(element) {
-  let rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-    element.style.display !== 'none'
-  );
-}
-
-let lists = document.querySelectorAll(".features__list");
-
-function animateElements() {
-  lists.forEach(function(list, index) {
-    if (isElementInViewport(list)) {
-      setTimeout(function() {
-        list.classList.add("show");
-      }, index * 150); 
-    }
-  });
-}
-
-function throttle(func, delay) {
-  let timeoutId;
-  return function() {
-    if (!timeoutId) {
-      timeoutId = setTimeout(function() {
-        func();
-        timeoutId = null;
-      }, delay);
-    }
-  };
-}
-
-function debounce(func, delay) {
-  let timeoutId;
-  return function() {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(func, delay);
-  };
-}
-
-window.addEventListener("scroll", throttle(animateElements, 200));
-window.addEventListener("load", animateElements);
-
-
