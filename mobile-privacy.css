@@ -589,7 +589,7 @@
     color: #FFFFFF;
  }
 
- /* Footer */
+  /* Footer */
  .footer {
 
  }
@@ -641,6 +641,12 @@
     margin-bottom: 0;
   }
   .footer__end_support {
+    margin-bottom: 0;
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    display: flex;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;

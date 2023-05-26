@@ -33,3 +33,17 @@ window.addEventListener('DOMContentLoaded', function() {
     document.body.style.overflow = 'auto'; // Разрешение прокрутки body
   });
 });
+
+
+document.querySelector(".nav__list-link.last.login-btn.oper").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent default anchor click behavior
+
+  const targetElement = document.getElementById("solutions");
+  const offset = targetElement.offsetTop;
+
+  window.scrollTo({
+    top: offset,
+    behavior: "smooth"
+  });
+});
+
