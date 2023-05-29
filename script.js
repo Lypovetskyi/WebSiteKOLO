@@ -47,3 +47,15 @@ document.querySelector(".nav__list-link.last.login-btn.oper").addEventListener("
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+      let loginButton = document.querySelector('.login-btn');
+      loginButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: 'smooth'
+        });
+      });
+});
+    
+

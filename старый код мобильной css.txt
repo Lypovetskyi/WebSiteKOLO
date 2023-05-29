@@ -1247,3 +1247,147 @@
     padding-bottom: 52px;
   }
 }
+
+
+@media screen and (max-width: 1024px) {
+    /* header */
+    .header_container {
+        column-gap: 10px;
+        padding-top: 20px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    
+    .header__nav {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .nav__list-link {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    
+    .login-btn {
+        margin-top: 10px;
+    }
+    /*background-images  */
+    .background-images {
+        height: auto;
+    position: relative;
+    background-color: #0D0D0E;
+}
+
+    .total-balance {
+    margin: 0 auto;
+    position: absolute;
+    top: -80px;
+    left: 85px;
+    z-index: 1;
+    border-radius: 10px;
+}
+.text__animation {
+    position: relative;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.text__animation_container {
+    margin-top: -220px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.text__animation_info_title {
+    font-size: 24px;
+}
+.text__payments {
+    column-gap: 50px;
+}
+.payment__features {
+    margin-top: 56px;
+    background-image: url(/img/payment-methodfeatures/mobile-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;  
+}
+    
+.payment__method-features h2 {
+    font-size: 50px;
+}
+.features__list-last {
+    column-gap: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.features__list-last img {
+    max-width: 305px;
+}
+
+/* target */
+.target__title h2 {
+    padding-top: 70px;
+    font-size: 50px;
+}
+
+.target__title p {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.target__info {
+    color: #F4F4F4;
+    display: flex;
+    column-gap: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* inreceiving__payments */
+
+.inreceiving__payments_list {
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+    column-gap: 25px;
+}
+.inreceiving__payments-title {
+    font-size: 25px;
+    padding-top: 30px;
+
+}
+
+/* solutions */
+.solutions__container {
+    padding-right: 25px;
+    padding-left: 25px;
+
+}
+
+/* footer */
+.footer {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.footer__end {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.footer__end_text {
+    width: 175px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    margin-right: 180px;
+}
+.footer__end_support {
+    margin: 0;
+}
+
+}

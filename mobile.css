@@ -3,6 +3,24 @@ html {
 margin: 0;
 }
 
+@keyframes slideDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header__nav.open {
+  animation: slideDownAnimation 0.7s forwards;
+}
+
+
+
 
 
 @media screen and (max-width: 1024px) {
@@ -728,7 +746,7 @@ margin: 0;
     }
     
     .login-btn {
-    padding: 5px 12px;
+    padding: 11px 32px;
     background: #FFA051;
     color: #FFFFFF;
 }
@@ -2066,6 +2084,7 @@ margin: 0;
   }
   .text__animation_title   {
     max-width: 267px;
+    width: 375px;
     margin-right: auto;
     margin-left: auto;
     padding: 0;

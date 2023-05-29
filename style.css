@@ -682,6 +682,13 @@ justify-content: space-between;
     font-size: 22px;
     line-height: 1.09;
     text-decoration-line: underline;
+}
+.solutions__mail_address {
+    font-size: 16px;
+    align-items:center;
+    text-align: center;
+    text-decoration: none;
+    color: #F5F5F5;
 
 }
 
