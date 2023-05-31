@@ -163,8 +163,8 @@
   .img_container_balance {
     display: block;
     top: 500px;
-    width: 450px;
-    left: 0;
+    /* width: 450px; */
+    left: 50px;
     justify-content: start;
     z-index: 0;
     position: absolute;
@@ -825,8 +825,7 @@
 
   .img_container_balance {
     top: 480px;
-    left: 0;
-    width: 530px;
+    left: 50px;
     justify-content: start;
     z-index: 0;
     position: absolute;
@@ -1495,9 +1494,9 @@
 
   .img_container_balance {
     top: 465px;
-    right: 50px;
-    width: 100%;
+    left: 50px;
     z-index: 0;
+    width: 153px;
     position: absolute;
   }
 
@@ -1955,4 +1954,40 @@
     color: #F9F9F9;
   }
 
+  .inreceiving__payments_list-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 16px;
+    min-height: 260px;
+  }
+
+  .inreceiving__payments_list-item::after {
+    content: none;
+  }
+
+  .inreceiving__payments_img {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .inreceiving__payments-title {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .inreceiving__payments-subtitle {
+    padding: 0;
+    margin: 6px 0 0;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+  }
 }
