@@ -11,8 +11,8 @@ window.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = 'hidden';
 
     // Прокрутка страницы вниз
-    const elementToScroll = document.querySelector('.scroll-target');
-    elementToScroll.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // const elementToScroll = document.querySelector('.scroll-target');
+    // elementToScroll.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
   navCloseBtn.addEventListener('click', function () {
@@ -22,10 +22,10 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   loginBtn.addEventListener('click', function (event) {
-    event.preventDefault(); // Предотвращение перехода по ссылке
+    // event.preventDefault(); // Предотвращение перехода по ссылке
 
-    const loginSection = document.getElementById('login');
-    loginSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // const loginSection = document.getElementById('login');
+    // loginSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     // Закрытие меню после перехода
     nav.classList.remove('open');
@@ -36,14 +36,14 @@ window.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.header__nav .nav__list-link');
   navLinks.forEach(function (link) {
     link.addEventListener('click', function (event) {
-      event.preventDefault(); // Предотвращение перехода по ссылке
+      // event.preventDefault(); // Предотвращение перехода по ссылке
 
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
+      // const targetId = this.getAttribute('href').substring(1);
+      // const targetElement = document.getElementById(targetId);
 
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      // if (targetElement) {
+      //   targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // }
 
       // Закрытие меню после перехода
       nav.classList.remove('open');
@@ -53,13 +53,13 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  let loginButton = document.querySelector('.login-btn');
-  loginButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: 'smooth'
-    });
-  });
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//   let loginButton = document.querySelector('.login-btn');
+//   loginButton.addEventListener('click', function (event) {
+//     event.preventDefault();
+//     window.scrollTo({
+//       top: document.documentElement.scrollHeight,
+//       behavior: 'smooth'
+//     });
+//   });
+// });
