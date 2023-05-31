@@ -32,30 +32,34 @@ window.addEventListener('DOMContentLoaded', function() {
     mainTitle.classList.remove('open');
     document.body.style.overflow = 'auto'; // Разрешение прокрутки body
   });
-});
 
+  const navLinks = document.querySelectorAll('.header__nav .nav__list-link');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Предотвращение перехода по ссылке
 
-document.querySelector(".nav__list-link.last.login-btn.oper").addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent default anchor click behavior
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
 
-  const targetElement = document.getElementById("solutions");
-  const offset = targetElement.offsetTop;
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
 
-  window.scrollTo({
-    top: offset,
-    behavior: "smooth"
+      // Закрытие меню после перехода
+      nav.classList.remove('open');
+      mainTitle.classList.remove('open');
+      document.body.style.overflow = 'auto'; // Разрешение прокрутки body
+    });
   });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-      let loginButton = document.querySelector('.login-btn');
-      loginButton.addEventListener('click', function(event) {
-        event.preventDefault();
-        window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior: 'smooth'
-        });
-      });
+  let loginButton = document.querySelector('.login-btn');
+  loginButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth'
+    });
+  });
 });
-    
-
